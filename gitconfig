@@ -1,0 +1,10 @@
+[user]
+	email = nick@pilotmoon.com
+	name = Nick Moore
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHtoLybiYrwRRnIESSdLe6PmUfrGqFUVKQ6RAl+nz/8Z
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

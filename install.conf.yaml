@@ -4,11 +4,13 @@
 
 - clean: ['~']
 
-#- link:
-#    ~/.zshrc: zshrc
+- link:
+    ~/.zshrc:
+    ~/.zprofile:
+    ~/.gitconfig:
 
 - create:
-  - ~/source
+  - ~/work
 
 #- shell:
 #  - [git submodule update --init --recursive, Installing submodules]
