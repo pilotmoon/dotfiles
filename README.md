@@ -17,6 +17,7 @@ Steps I took setting up a new, clean, machine from scratch:
 * Installed homebrew, including adding the path to `.zprofile` using the suggested commands.
   * `.zprofile` is run first, then `.zshrc` is run each time an interactive shell starts\
 * Installed 1Password using `brew install --cask 1password`
+  * Installed 1P CLI using `brew install --cask 1password/tap/1password-cli`
 * Set up GitHub SSH:
   * Followed the instructions in 1P to install it as the SSH agent (`~/.ssh/config`).
   * Use 1Password to create a new Ed25519 SSH key, for GitHub.
@@ -28,4 +29,10 @@ Steps I took setting up a new, clean, machine from scratch:
 * Set up dotfiles repo:  
   * Move `.zshrc` to `.dotfiles/zshrc`.
   * Set up symlink with `ln -s ~/.dotfiles/zshrc ~/.zshrc` (using full paths).
- 
+  * Add dotbot submodule with `git submodule add https://github.com/anishathalye/dotbot`.
+  * Follow other manual install instructions for dotbot.
+  * Copy in `install.conf.yaml` from example; edit to do a few minimal tasks & test with `./install`.
+
+  
+  
+
