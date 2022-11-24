@@ -8,6 +8,8 @@ Test
 
 Steps I took setting up a new, clean, machine from scratch:
 
+* Finder set up: show path bar, show file extensions, configure sidebar, etc.
+* Keybaord: set caps lock as control
 * In macOS Settings, ensure latest OS version is installed.
 * Create `~/.zshrc` file and add `ll` alias, custom `PROMPT`.
 * Terminal: `xcode-select --install`
@@ -18,8 +20,12 @@ Steps I took setting up a new, clean, machine from scratch:
 * Set up GitHub SSH:
   * Followed the instructions in 1P to install it as the SSH agent (`~/.ssh/config`).
   * Use 1Password to create a new Ed25519 SSH key, for GitHub.
-  * In GitHub settings add the new public key key.
+  * In GitHub settings add the new public key twice, as both authentication and signing key.
   * Test with `ssh git@github.com -T`.
   * Followed the instructions in 1P to configure `.gitconfig` to sign commits with this same SSH key.
-* In Github create this dotfiles repo & clone to `~/.dotfiles`.
-
+* In GitHub create this dotfiles repo & clone to `~/.dotfiles`.
+  * Couple test commits to README to test GitHub's commit verification.
+* Set up dotfiles repo:  
+  * Move `.zshrc` to `.dotfiles/zshrc`.
+  * Set up symlink with `ln -s ~/.dotfiles/zshrc ~/.zshrc` (using full paths).
+ 
