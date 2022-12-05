@@ -2,6 +2,9 @@ echo 'Hello from .zshrc'
 
 # Set Variables
 
+# Add syntax highlighting for manpages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # Change ZSH Options
 
 # Create Aliases
