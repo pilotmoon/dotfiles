@@ -14,9 +14,5 @@ else
 	brew update
 fi
 
-brew install httpie
-brew install bat
-
-brew install --no-quarantine google-chrome
-brew install --no-quarantine visual-studio-code
-brew install --no-quarantine alfred
+# made with `brew bundle dump``
+brew bundle --verbose
