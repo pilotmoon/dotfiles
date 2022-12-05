@@ -1,6 +1,10 @@
 - defaults:
     link:
       relink: true
+    shell:
+      stdin: true
+      stdout: true
+      stderr: true
 
 - clean: ['~']
 
@@ -12,5 +16,6 @@
 - create:
   - ~/work
 
-#- shell:
+- shell:
 #  - [git submodule update --init --recursive, Installing submodules]
+  - [./setup_homebrew.zsh, Setting up Homebrew]
