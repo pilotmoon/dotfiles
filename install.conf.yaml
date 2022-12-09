@@ -8,6 +8,13 @@
 
 - clean: ['~']
 
+- create:
+  - ~/work
+
+- shell:
+  - [./setup_homebrew.zsh, Setting up Homebrew]
+  - [./setup_ssh.zsh, Setting up SSH]
+
 - link:
     ~/.zshrc:
     ~/.zprofile:
@@ -15,9 +22,3 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/allowed_signers: ssh/allowed_signers
 
-- create:
-  - ~/work
-
-- shell:
-#  - [git submodule update --init --recursive, Installing submodules]
-  - [./setup_homebrew.zsh, Setting up Homebrew]
