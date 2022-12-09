@@ -4,11 +4,13 @@ echo 'Hello from .zshrc'
 
 # Add syntax highlighting for manpages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# Homebrew options
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Change ZSH Options
 
 # Create Aliases
-alias ll='ls -lAFh'
+alias ll='exa -laFh --git'
 
 # Customise Prompt(s)
 PROMPT='
