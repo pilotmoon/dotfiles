@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+set -e
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
 echo "Testing for brew..."

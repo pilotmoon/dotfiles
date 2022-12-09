@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+set -e
 echo "\n<<< Starting SSH Setup >>>\n"
 
 # use 1Passsword CLI to generaate the actual file (which is in .gitignore)
