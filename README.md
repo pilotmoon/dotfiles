@@ -14,7 +14,7 @@ Starting with a clean install:
 
 3. Install 1Password:
 
-   `brew install 1password`
+   `brew install --cask 1password`
 
 4. Install 1Password CLI:
 
