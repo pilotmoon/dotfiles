@@ -12,7 +12,6 @@
   - ~/work
 
 - shell:
-  - [./setup_homebrew.zsh, Setting up Homebrew]
   - [./setup_ssh.zsh, Setting up SSH]
 
 - link:
