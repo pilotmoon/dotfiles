@@ -10,8 +10,13 @@ cask "1password"
 cask "1password-cli"
 cask "alfred"
 cask "dropbox"
+cask "gitup"
 cask "google-chrome"
+cask "iina"
 cask "netnewswire"
+cask "setapp"
+cask "syntax-highlight"
+cask "todoist"
 cask "visual-studio-code"
 mas "1Password for Safari", id: 1569813296
 mas "Keynote", id: 409183694
