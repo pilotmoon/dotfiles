@@ -9,3 +9,5 @@
 	allowedSignersFile = /Users/nick/.ssh/allowed_signers
 [commit]
 	gpgsign = true
+[alias]
+	log-nice = log --graph --abbrev-commit --decorate --date=relative --format=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all
