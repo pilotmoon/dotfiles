@@ -12,6 +12,8 @@
     ~/.zshrc:
     ~/.zprofile:
     ~/.gitconfig:
+    ~/.ssh/config: ssh/config
+    ~/.ssh/allowed_signers: ssh/allowed_signers
 
 - create:
   - ~/work
