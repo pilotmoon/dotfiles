@@ -1,12 +1,42 @@
 # dotfiles
 
-Built whilst following the [Dotfiles from Start to Finish-ish](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/) course.
+Personal dotfiles. Inspired by the [Dotfiles from Start to Finish-ish](https://www.udemy.com/course/dotfiles-from-start-to-finish-ish/).
 
-Test
+## Manual bootstrap procedure
+
+Starting with a clean install:
+
+1. Install Command Line Tools with
+
+   `xcode-select --install`
+
+2. Install Homebrew -- see <https://brew.sh> for current installation instructions.
+
+3. Install 1Password:
+
+   `brew install 1password`
+
+4. Install 1Password CLI:
+
+   `brew install --cask 1password/tap/1password-cli`
+
+   (see docs: <https://developer.1password.com/docs/cli>)
+
+5. In 1password, turn on *Connect with 1Password CLI*.
+
+   To test: `op item get gitserver`
+
+6. Clone this repo using HTTPS (since no SSH set up yet):
+
+   `git clone https://github.com/pilotmoon/dotfiles.git .dotfiles`
+
+At this point, everything should be ready and you can run the the `install` script.
+
+---
 
 ## Log
 
-Steps I took setting up a new, clean, machine from scratch:
+For future reference. Steps I took setting up an initial `.dotfiles` folder on a new, clean, machine from scratch (without install script).
 
 * Finder set up: show path bar, show file extensions, configure sidebar, etc.
 * Keybaord: set caps lock as control
@@ -32,7 +62,3 @@ Steps I took setting up a new, clean, machine from scratch:
   * Add dotbot submodule with `git submodule add https://github.com/anishathalye/dotbot`.
   * Follow other manual install instructions for dotbot.
   * Copy in `install.conf.yaml` from example; edit to do a few minimal tasks & test with `./install`.
-
-  
-  
-
