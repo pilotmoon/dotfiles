@@ -22,15 +22,20 @@ Starting with a clean install:
 
    (see docs: <https://developer.1password.com/docs/cli>)
 
-5. In 1password, turn on *Connect with 1Password CLI*.
+5. In 1password → Developer → Settings
+  
+   * turn on *Use SSH Agent* and allow saving key name.
+   * turn on *Connect with 1Password CLI*.
+  
+     To test: `op item get gitserver`
 
-   To test: `op item get gitserver`
+6. create `~/.dotfiles/` by cloning this repo (using HTTPS since SSH is not set up yet):
 
-6. Clone this repo using HTTPS (since no SSH set up yet):
+   `cd; git clone https://github.com/pilotmoon/dotfiles.git .dotfiles`
 
-   `git clone https://github.com/pilotmoon/dotfiles.git .dotfiles`
+At this point, everything should be ready to run `~/.dotfiles/install`.
 
-At this point, everything should be ready and you can run the the `install` script.
+then run `setup_homebrew.zsh` afterwards.
 
 ---
 
@@ -39,7 +44,7 @@ At this point, everything should be ready and you can run the the `install` scri
 For future reference. Steps I took setting up an initial `.dotfiles` folder on a new, clean, machine from scratch (without install script).
 
 * Finder set up: show path bar, show file extensions, configure sidebar, etc.
-* Keybaord: set caps lock as control
+* Keyboard: set caps lock as control
 * In macOS Settings, ensure latest OS version is installed.
 * Create `~/.zshrc` file and add `ll` alias, custom `PROMPT`.
 * Terminal: `xcode-select --install`
