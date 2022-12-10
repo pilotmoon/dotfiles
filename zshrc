@@ -1,10 +1,6 @@
 echo 'Hello from .zshrc'
 
-## Prompts ##
-
-PROMPT='
-%1~ %L %# '
-RPROMPT='%*'
+source ~/.dotfiles/zsh_my_config
 
 ## Variables ##
 
@@ -21,9 +17,9 @@ alias ll='exa -laFh --git'
 alias bb='open -a BBEdit'
 
 # git helpers
-#alias ga.='git add .'
 #alias ga='git add'
 #alias gdt='git difftool'
+alias ga.='git add .'
 alias gca='git commit -a -m'
 alias gcm='git commit -m'
 alias gco='git checkout'
