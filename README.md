@@ -35,7 +35,7 @@ Starting with a clean install:
 
 At this point, everything should be ready to run `~/.dotfiles/install`.
 
-then run `setup_homebrew.zsh` afterwards.
+then run `setup_apps.zsh` afterwards.
 
 ---
 
