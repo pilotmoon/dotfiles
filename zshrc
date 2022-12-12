@@ -15,6 +15,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # general tools
 alias ll='exa -laFh --git'
 alias bb='open -a BBEdit'
+alias ghd='open -a GitHub\ Desktop'
 
 # git helpers
 #alias ga='git add'
