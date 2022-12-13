@@ -2,7 +2,7 @@
 ## ZSH Config ##
 
 # https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt/
-https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
+# https://arjanvandergaag.nl/blog/customize-zsh-prompt-with-vcs-info.html
 # Load version control information
 autoload -Uz vcs_info
 
