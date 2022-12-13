@@ -12,6 +12,7 @@
   - ~/work
 
 - shell:
+  - [git submodule update --init, Pull in submodules]
   - [./setup_ssh.zsh, Setting up SSH]
 
 - link:
