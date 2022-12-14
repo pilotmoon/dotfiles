@@ -12,6 +12,10 @@ zstyle ':vcs_info:git:*' formats 'on %b'
 # precmd is executed before each prompt https://zsh.sourceforge.io/Doc/Release/Functions.html
 precmd() { vcs_info } 
 
+# prevent dups in history
+# https://unix.stackexchange.com/questions/599641/why-do-i-have-duplicates-in-my-zsh-history
+setopt HIST_FIND_NO_DUPS
+
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT='
