@@ -16,6 +16,7 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 alias ll='exa -laFh --git'
 alias bb='open -a BBEdit'
 alias ghd='open -a GitHub\ Desktop'
+alias kk='export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock; open -a GitKraken'
 
 # git helpers
 #alias ga='git add'
