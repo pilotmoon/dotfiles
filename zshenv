@@ -1,4 +1,4 @@
-echo 'Hello from .zprofile'
+echo 'Hello from .zshenv'
 
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"

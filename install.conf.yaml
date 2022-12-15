@@ -17,7 +17,7 @@
 
 - link:
     ~/.zshrc:
-    ~/.zprofile:
+    ~/.zshenv:
     ~/.gitconfig:
     ~/.ssh/config: ssh/config
     ~/.ssh/allowed_signers: ssh/allowed_signers
