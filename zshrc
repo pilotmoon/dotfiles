@@ -1,8 +1,24 @@
 echo 'Hello from .zshrc'
+dotfiles_dir="~/.dotfiles/"
 
-source ~/.dotfiles/zsh_my_config
+################
+## ZSH Config ##
+################
 
+# prevent dups in history
+# https://unix.stackexchange.com/questions/599641/why-do-i-have-duplicates-in-my-zsh-history
+setopt HIST_FIND_NO_DUPS
+
+# prompt
+eval "$(oh-my-posh init zsh --config $dotfiles_dir/resources/nick.onehalf.minimal.omp.json)"
+
+# Set up autocomplete using plugin
+# https://github.com/marlonrichert/zsh-autocomplete
+# source ~/.dotfiles/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+###############
 ## Variables ##
+###############
 
 # Add syntax highlighting for manpages
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -10,7 +26,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Homebrew options
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
+#############
 ## Aliases ##
+#############
 
 # general tools
 alias ll='exa -laFh --git'
@@ -35,21 +53,17 @@ alias ver='git describe --long --match buildbase'
 # my tools
 alias ose='open -a SignExt'
 
-# Add Location to $PATH Variable
-
-# Write Handy Functions
+# functions
 function mkcd() {
   mkdir -p $@ && cd $_;
 } 
 
-# Path stuff
+########
+# Path #
+########
+# note: brew path is set in zshenv
 
-# rbenv (this expands to a PATH statement)
+# rbenv
 if command -v rbenv >/dev/null 2>&1; then
 	eval "$(rbenv init - zsh)"
 fi
-
-
-# Use ZSH Plugins
-
-# ...and Other Surprises
