@@ -40,7 +40,6 @@ mas "1Password for Safari", id: 1569813296
 mas "Boop", id: 1518425043
 mas "Broadcasts", id: 1469995354
 mas "dynamic wallpaper", id: 1582358382
-mas "GitViewer", id: 1622656471
 mas "Grammarly for Safari", id: 1462114288
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
