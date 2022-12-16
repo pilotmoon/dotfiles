@@ -1,5 +1,4 @@
 echo 'Hello from .zshrc'
-dotfiles_dir="~/.dotfiles/"
 
 ################
 ## ZSH Config ##
@@ -10,7 +9,7 @@ dotfiles_dir="~/.dotfiles/"
 setopt HIST_FIND_NO_DUPS
 
 # prompt
-eval "$(oh-my-posh init zsh --config $dotfiles_dir/resources/nick.onehalf.minimal.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.omp.json)"
 
 # Set up autocomplete using plugin
 # https://github.com/marlonrichert/zsh-autocomplete

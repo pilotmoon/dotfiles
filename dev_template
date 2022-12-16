@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+# My own build process stuff
+export PILOTMOON_APPBUILDS_LOCATION="op://dev/BuildSettings/appbuilds_location"
+export PILOTMOON_WWW_SOURCE_LOCATION="op://dev/BuildSettings/www_source_path"
+export PILOTMOON_WWW_DEPLOY_LOCATION="op://dev/BuildSettings/www_deploy_path"
+export PILOTMOON_WWW_RELEASES_LOCATION="$PILOTMOON_WWW_SOURCE_LOCATION/_releases"
+export PILOTMOON_WWW_DOWNLOADS_LOCATION="$PILOTMOON_WWW_DEPLOY_LOCATION/htdocs/downloads"
+export PILOTMOON_WWW_SSH_URL='op://dev/BuildSettings/www_ssh_url'
+export PILOTMOON_WWW_GIT_REPO='op://dev/BuildSettings/www_git_url'
+
