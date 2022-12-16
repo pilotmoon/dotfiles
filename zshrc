@@ -42,6 +42,14 @@ function mkcd() {
   mkdir -p $@ && cd $_;
 } 
 
+# Path stuff
+
+# rbenv (this expands to a PATH statement)
+if command -v rbenv >/dev/null 2>&1; then
+	eval "$(rbenv init - zsh)"
+fi
+
+
 # Use ZSH Plugins
 
 # ...and Other Surprises
