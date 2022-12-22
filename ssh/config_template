@@ -1,13 +1,29 @@
+# 1Password is the identity agent
 Host *
 	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
-Host mansell
-	User op://dev/mansell/username
-	HostName op://dev/mansell/ip
-	Port op://dev/mansell/ssh_port
+# Local NAS
+Host op://dev/nas/hostname
+	User op://dev/nas/username
+	HostName op://dev/nas/ip
+	Port op://dev/nas/ssh_port
 
+# Local git server
 Host gitserver
-	User op://dev/mansell/username
-	HostName op://dev/mansell/ip
-	Port op://dev/mansell/ssh_port
+	User op://dev/nas/username
+	HostName op://dev/nas/ip
+	Port op://dev/nas/ssh_port
 
+# Personal GitHub
+Host github1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github1.pub
+    IdentitiesOnly yes
+
+# Work GitHub
+Host github
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github.pub
+    IdentitiesOnly yes

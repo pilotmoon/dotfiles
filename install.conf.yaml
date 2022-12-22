@@ -21,5 +21,7 @@
     ~/.zshenv:
     ~/.gitconfig:
     ~/.ssh/config: ssh/config
+    ~/.ssh/github.pub: ssh/github.pub
+    ~/.ssh/github1.pub: ssh/github1.pub
     ~/.ssh/allowed_signers: ssh/allowed_signers
 

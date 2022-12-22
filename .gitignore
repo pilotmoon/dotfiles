@@ -1,4 +1,7 @@
 .DS_Store
 Brewfile.lock.json
 ssh/config
+ssh/github.pub
+ssh/github1.pub
+ssh/allowed_signers
 dev
