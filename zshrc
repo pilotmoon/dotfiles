@@ -1,5 +1,17 @@
 echo 'Hello from .zshrc'
 
+########
+# Path #
+########
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# rbenv
+if command -v rbenv >/dev/null 2>&1; then
+	eval "$(rbenv init - zsh)"
+fi
+
 ################
 ## ZSH Config ##
 ################
@@ -57,12 +69,6 @@ function mkcd() {
   mkdir -p $@ && cd $_;
 } 
 
-########
-# Path #
-########
-# note: brew path is set in zshenv
 
-# rbenv
-if command -v rbenv >/dev/null 2>&1; then
-	eval "$(rbenv init - zsh)"
-fi
+
+
