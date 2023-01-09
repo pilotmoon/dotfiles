@@ -25,7 +25,7 @@ eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.
 
 # Set up autocomplete using plugin
 # https://github.com/marlonrichert/zsh-autocomplete
-# source ~/.dotfiles/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source ~/.dotfiles/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 ###############
 ## Variables ##
