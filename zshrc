@@ -37,6 +37,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Homebrew options
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 
+# Browser for `gh`
+export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 #############
 ## Aliases ##
 #############
