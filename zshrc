@@ -1,4 +1,4 @@
-echo 'Hello from .zshrc'
+#echo 'Hello from .zshrc'
 
 ########
 # Path #
@@ -72,6 +72,10 @@ alias ose='open -a SignExt'
 function mkcd() {
   mkdir -p $@ && cd $_;
 } 
+
+function release() {
+  git tag -a $1 -m $1
+}
 
 
 
