@@ -27,3 +27,9 @@ Host github
     User git
     IdentityFile ~/.ssh/github.pub
     IdentitiesOnly yes
+    
+# lemonade
+Host lemonade
+	User op://dev/lemonade/username
+	HostName op://dev/lemonade/ip
+	Port op://dev/lemonade/ssh_port
