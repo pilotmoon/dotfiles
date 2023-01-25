@@ -12,6 +12,11 @@ if command -v rbenv >/dev/null 2>&1; then
 	eval "$(rbenv init - zsh)"
 fi
 
+# nodenv
+if command -v rbenv >/dev/null 2>&1; then
+	eval "$(nodenv init -)"
+fi
+
 ################
 ## ZSH Config ##
 ################
