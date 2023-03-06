@@ -28,9 +28,46 @@ setopt HIST_FIND_NO_DUPS
 # prompt
 eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.omp.json)"
 
-# Set up autocomplete using plugin
+# Set up autocomplete etc using plugins
+
 # https://github.com/marlonrichert/zsh-autocomplete
 # source ~/.dotfiles/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# https://github.com/zsh-users/zsh-completions
+# fpath=(~/.dotfiles/zsh-autocomplete/src $fpath)
+
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+source ~/.dotfiles/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# initialise zsh completions function
+autoload -U compinit
+compinit
+
+#
+# zstyle
+#
+# set case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# show as menu
+zstyle ':completion:*' menu 'yes=long' select
+
+#
+# ZSH Options <https://zsh.sourceforge.io/Doc/Release/Options.html>
+#
+# insert on first tab press
+setopt menu_complete 
+# don't beep/flash on ambiguous completion
+unsetopt list_beep
+
+# Set up history searching
+# https://superuser.com/questions/585003/searching-through-history-with-up-and-down-arrow-in-zsh
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
+
 
 ###############
 ## Variables ##
@@ -44,6 +81,9 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 
 # Browser for `gh`
 export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+# Prevent npx auto-installing things
+export NPM_CONFIG_YES=false
 
 #############
 ## Aliases ##
