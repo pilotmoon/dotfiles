@@ -33,3 +33,9 @@ Host lemonade
 	User op://dev/lemonade/username
 	HostName op://dev/lemonade/ip
 	Port op://dev/lemonade/ssh_port
+
+# web
+Host phpi
+	User op://dev/phpi/username
+	HostName op://dev/phpi/domain
+	Port 22 op://dev/phpi/ssh_port
