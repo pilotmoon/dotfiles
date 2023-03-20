@@ -38,4 +38,4 @@ Host lemonade
 Host phpi
 	User op://dev/phpi/username
 	HostName op://dev/phpi/domain
-	Port 22 op://dev/phpi/ssh_port
+	Port op://dev/phpi/ssh_port
