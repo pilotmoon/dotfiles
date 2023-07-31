@@ -24,6 +24,7 @@ brew "nodenv"
 brew "tidy-html5"
 brew "php"
 brew "rbenv"
+brew "wget"
 brew "yt-dlp"
 brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 brew "mongodb/brew/mongodb-database-tools"
@@ -48,6 +49,7 @@ cask "iina"
 cask "imageoptim"
 cask "insomnia"
 cask "komet"
+cask "microsoft-auto-update"
 cask "microsoft-edge"
 cask "mongodb-compass"
 cask "netnewswire"
@@ -55,6 +57,7 @@ cask "ngrok"
 cask "numi"
 cask "obs"
 cask "obsidian"
+cask "popclip"
 cask "private-internet-access"
 cask "scroll-reverser"
 cask "setapp"
@@ -71,19 +74,17 @@ cask "whatsapp"
 mas "1Password for Safari", id: 1569813296
 mas "Boop", id: 1518425043
 mas "Broadcasts", id: 1469995354
-mas "dynamic wallpaper", id: 1582358382
 mas "Grammarly for Safari", id: 1462114288
 mas "Hyperfocus", id: 1621523525
+mas "Integrity", id: 513610341
 mas "Key Codes", id: 414568915
-mas "Keynote", id: 409183694
+mas "MarkEdit", id: 1669953820
 mas "Numbers", id: 409203825
 mas "Onigiri", id: 1639917298
 mas "Pages", id: 409201541
-mas "PDF Expert", id: 1055273043
-mas "Quiver", id: 866773894
-mas "Streaks", id: 963034692
+mas "Pixelmator Pro", id: 1289583905
+mas "Table Tool", id: 1122008420
 mas "Tot", id: 1491071483
 mas "Track", id: 1191484642
-mas "Translate Tab", id: 458887729
 mas "Velja", id: 1607635845
 mas "Xcode", id: 497799835
