@@ -8,7 +8,7 @@ Starting with a clean install:
 
 1. Install Command Line Tools with
 
-   `xcode-select --install`
+   `xcode-select --install` -- or download from <https://developer.apple.com/download/>
 
 2. Install Homebrew -- see <https://brew.sh> for current installation instructions.
 
@@ -16,26 +16,30 @@ Starting with a clean install:
 
    `brew install --cask 1password`
 
-4. Install 1Password CLI:
+   and sign in to account. (Don't do anything else yet.)
+
+5. Install 1Password CLI:
 
    `brew install --cask 1password/tap/1password-cli`
 
-   (see docs: <https://developer.1password.com/docs/cli>)
+   (docs: <https://developer.1password.com/docs/cli>)
 
-5. In 1password → Developer → Settings
+6. In 1password → Developer → Settings
   
    * turn on *Use SSH Agent* and allow saving key name.
    * turn on *Connect with 1Password CLI*.
   
-     To test: `op item get gitserver`
+     To test: `op item get nas`
 
-6. create `~/.dotfiles/` by cloning this repo (using HTTPS since SSH is not set up yet):
+7. create `~/.dotfiles/` by cloning this repo (using HTTPS since SSH is not set up yet):
 
    `cd; git clone https://github.com/pilotmoon/dotfiles.git .dotfiles`
 
-At this point, everything should be ready to run `~/.dotfiles/install`.
+8. Set Terminal theme: `open ~/.dotfiles/resources` and double-click terminal theme; set as default.
 
-then run `setup_apps.zsh` afterwards.
+9. Run `~/.dotfiles/install`.
+
+10. Run ``~/.dotfiles/setup_apps.zsh`.
 
 ---
 
