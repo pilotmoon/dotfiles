@@ -85,6 +85,9 @@ export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # Prevent npx auto-installing things
 export NPM_CONFIG_YES=false
 
+# SSH auth
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
 #############
 ## Aliases ##
 #############
@@ -93,7 +96,7 @@ export NPM_CONFIG_YES=false
 alias ll='exa -laFh --git'
 alias bb='open -a BBEdit'
 alias ghd='open -a GitHub\ Desktop'
-alias kk='export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock; open -a GitKraken'
+alias kk='open -a GitKraken'
 alias ds='open -a Dropshelf'
 alias ip="ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2"
 
