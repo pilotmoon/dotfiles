@@ -117,6 +117,9 @@ alias ver='git describe --long --match buildbase'
 # my tools
 alias ose='open -a SignExt'
 
+# ssh setup
+alias sshcopy='ssh-copy-id -f -i ~/.ssh/nick_general'
+
 # functions
 function mkcd() {
   mkdir -p $@ && cd $_;

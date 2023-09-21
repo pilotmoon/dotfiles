@@ -39,3 +39,35 @@ Host phpi
 	User op://dev/phpi/username
 	HostName op://dev/phpi/domain
 	Port op://dev/phpi/ssh_port
+
+# hma
+Host hma
+	User op://dev/hma/username
+	HostName op://dev/hma/domain
+	Port op://dev/hma/ssh_port
+    IdentityFile ~/.ssh/nick_general.pub
+    IdentitiesOnly yes
+    
+# ricciardo
+Host ricciardo
+	User nick
+	HostName ricciardo.local
+	Port 22
+	IdentityFile ~/.ssh/nick_general.pub
+	IdentitiesOnly yes
+	
+# norris
+Host norris
+	User nick
+	HostName norris.local
+	Port 22
+	IdentityFile ~/.ssh/nick_general.pub
+	IdentitiesOnly yes
+	
+# kvyat
+Host kvyat
+	User nick
+	HostName kvyat.local
+	Port 22
+	IdentityFile ~/.ssh/nick_general.pub
+	IdentitiesOnly yes
