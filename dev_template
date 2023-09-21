@@ -8,4 +8,4 @@ export PILOTMOON_WWW_RELEASES_LOCATION="$PILOTMOON_WWW_SOURCE_LOCATION/_releases
 export PILOTMOON_WWW_DOWNLOADS_LOCATION="$PILOTMOON_WWW_DEPLOY_LOCATION/htdocs/downloads"
 export PILOTMOON_WWW_SSH_URL='op://dev/BuildSettings/www_ssh_url'
 export PILOTMOON_WWW_GIT_REPO='op://dev/BuildSettings/www_git_url'
-
+export PILOTMOON_POPCLIPWEB_REBUILD_URL='op://dev/BuildSettings/popclipweb_rebuild_url'
