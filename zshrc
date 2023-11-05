@@ -7,6 +7,9 @@
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# extra command for homebrew's curl to precede system
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
 # rbenv
 if command -v rbenv >/dev/null 2>&1; then
 	eval "$(rbenv init - zsh)"
