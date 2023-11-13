@@ -33,6 +33,8 @@ Host lemonade
 	User op://dev/lemonade/username
 	HostName op://dev/lemonade/ip
 	Port op://dev/lemonade/ssh_port
+    IdentityFile ~/.ssh/general.pub
+    IdentitiesOnly yes
 
 # web
 Host phpi
@@ -45,7 +47,7 @@ Host hma
 	User op://dev/hma/username
 	HostName op://dev/hma/domain
 	Port op://dev/hma/ssh_port
-    IdentityFile ~/.ssh/nick_general.pub
+    IdentityFile ~/.ssh/general.pub
     IdentitiesOnly yes
     
 # ricciardo
@@ -53,7 +55,7 @@ Host ricciardo
 	User nick
 	HostName ricciardo.local
 	Port 22
-	IdentityFile ~/.ssh/nick_general.pub
+	IdentityFile ~/.ssh/general.pub
 	IdentitiesOnly yes
 	
 # norris

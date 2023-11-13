@@ -24,6 +24,6 @@
     ~/.ssh/config: ssh/config
     ~/.ssh/github.pub: ssh/github.pub
     ~/.ssh/github1.pub: ssh/github1.pub
-    ~/.ssh/nick_general.pub: ssh/nick_general.pub
+    ~/.ssh/general.pub: ssh/general.pub
     ~/.ssh/allowed_signers: ssh/allowed_signers
 
