@@ -3,7 +3,8 @@
 	name = Nick Moore
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHtoLybiYrwRRnIESSdLe6PmUfrGqFUVKQ6RAl+nz/8Z
 [core]
-	editor = /Applications/Komet.app/Contents/MacOS/Komet
+#	editor = /Applications/Komet.app/Contents/MacOS/Komet
+	editor = nvim
 [gpg]
 	format = ssh
 [gpg "ssh"]
@@ -14,3 +15,17 @@
 [alias]
 	log-nice = log --graph --abbrev-commit --decorate --date=relative --format=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --all
 	co = checkout
+[diff]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+	trustExitCode = true
+[merge]
+	tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
