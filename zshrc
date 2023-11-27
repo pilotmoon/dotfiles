@@ -86,6 +86,7 @@ alias kk='open -a GitKraken'
 alias ds='open -a Dropshelf'
 alias ip="ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2"
 alias vi='nvim'
+alias path="echo $PATH | tr ':' '\\n'"
 
 # git helpers
 #alias ga='git add'
