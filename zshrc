@@ -71,6 +71,9 @@ export NPM_CONFIG_YES=false
 # SSH auth
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
+# Set up neovim as default editor
+export EDITOR=nvim
+
 #############
 ## Aliases ##
 #############
@@ -82,6 +85,7 @@ alias ghd='open -a GitHub\ Desktop'
 alias kk='open -a GitKraken'
 alias ds='open -a Dropshelf'
 alias ip="ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2"
+alias vi='nvim'
 
 # git helpers
 #alias ga='git add'
@@ -115,3 +119,6 @@ function release() {
 # extra command for homebrew's curl to precede system
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+
+# bun completions
+[ -s "/Users/nick/.bun/_bun" ] && source "/Users/nick/.bun/_bun"
