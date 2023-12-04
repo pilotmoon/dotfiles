@@ -4,5 +4,6 @@ ssh/config
 ssh/github.pub
 ssh/github1.pub
 ssh/nick_general.pub
+ssh/deploy.pub
 ssh/allowed_signers
 dev

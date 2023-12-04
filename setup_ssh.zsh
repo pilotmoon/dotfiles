@@ -8,6 +8,7 @@ op inject -f -i ssh/config_template -o ssh/config
 op inject -f -i ssh/github_template.pub -o ssh/github.pub
 op inject -f -i ssh/github1_template.pub -o ssh/github1.pub
 op inject -f -i ssh/general_template.pub -o ssh/general.pub
+op inject -f -i ssh/deploy_template.pub -o ssh/deploy.pub
 op inject -f -i ssh/allowed_signers_template -o ssh/allowed_signers
 
 # update this repo origin now that we can use SSH

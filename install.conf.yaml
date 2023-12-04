@@ -25,5 +25,6 @@
     ~/.ssh/github.pub: ssh/github.pub
     ~/.ssh/github1.pub: ssh/github1.pub
     ~/.ssh/general.pub: ssh/general.pub
+    ~/.ssh/deploy.pub: ssh/deploy.pub
     ~/.ssh/allowed_signers: ssh/allowed_signers
 

@@ -16,25 +16,33 @@ Host gitserver
 
 # Personal GitHub
 Host github1
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/github1.pub
-    IdentitiesOnly yes
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/github1.pub
+	IdentitiesOnly yes
 
 # Work GitHub
 Host github
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/github.pub
-    IdentitiesOnly yes
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/github.pub
+	IdentitiesOnly yes
     
 # lemonade
 Host lemonade
-	User op://dev/lemonade/username
+	User op://dev/lemonade-nick/username
 	HostName op://dev/lemonade/ip
 	Port op://dev/lemonade/ssh_port
-    IdentityFile ~/.ssh/general.pub
-    IdentitiesOnly yes
+	IdentityFile ~/.ssh/general.pub
+	IdentitiesOnly yes
+
+# lemonade deploy
+Host lemonade-deploy
+	User op://dev/lemonade-deploy/username
+	HostName op://dev/lemonade/ip
+	Port op://dev/lemonade/ssh_port
+	IdentityFile ~/.ssh/deploy.pub
+	IdentitiesOnly yes
 
 # web
 Host phpi
@@ -47,8 +55,8 @@ Host hma
 	User op://dev/hma/username
 	HostName op://dev/hma/domain
 	Port op://dev/hma/ssh_port
-    IdentityFile ~/.ssh/general.pub
-    IdentitiesOnly yes
+	IdentityFile ~/.ssh/general.pub
+	IdentitiesOnly yes
     
 # ricciardo
 Host ricciardo
