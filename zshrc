@@ -51,6 +51,10 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
+# ngrok completions
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
 
 ###############
 ## Variables ##
@@ -87,6 +91,7 @@ alias ds='open -a Dropshelf'
 alias ip="ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2"
 alias vi='nvim'
 alias path="echo $PATH | tr ':' '\\n'"
+alias sz="source ~/.zshrc"
 
 # git helpers
 #alias ga='git add'
@@ -96,10 +101,13 @@ alias gca='git commit -a -m'
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gd='git diff'
+alias gdt='git difftool'
 alias gp='git push'
 alias grv='git remote -v'
 alias gst='git status -sb'
 alias lg="git log-nice"
+# https://difftastic.wilfred.me.uk/git.html
+alias lgd="git log -p --ext-diff"
 alias ver='git describe --long --match buildbase'
 
 # my tools
