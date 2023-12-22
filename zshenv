@@ -8,7 +8,7 @@ source ~/.dotfiles/dev
 ########
 
 # Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/usr/bin/env brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv || /usr/local/bin/brew shellenv)"
 
 # rbenv
 if command -v rbenv >/dev/null 2>&1; then
