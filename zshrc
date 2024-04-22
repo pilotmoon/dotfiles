@@ -109,7 +109,7 @@ alias lg="git log-nice"
 # https://difftastic.wilfred.me.uk/git.html
 alias lgd="git log -p --ext-diff"
 alias ver='git describe --long --match buildbase'
-
+alias pcfind="mdfind \"kMDItemCFBundleIdentifier == 'com.pilotmoon.popclip*'\" 2>/dev/null"
 # my tools
 alias ose='open -a SignExt'
 
@@ -125,9 +125,12 @@ function release() {
   git tag -a $1 -m $1
 }
 
-# extra command for homebrew's curl to precede system
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-
 
 # bun completions
 [ -s "/Users/nick/.bun/_bun" ] && source "/Users/nick/.bun/_bun"
+
+# homebrew paths
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/crowdin@3/bin:$PATH"
+
+# extras
