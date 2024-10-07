@@ -111,7 +111,9 @@ alias lgd="git log -p --ext-diff"
 alias ver='git describe --long --match buildbase'
 alias pcfind="mdfind \"kMDItemCFBundleIdentifier == 'com.pilotmoon.popclip*'\" 2>/dev/null"
 # my tools
-alias ose='open -a SignExt'
+alias ose='open -a PopClip'
+alias z='open -a Zed'
+alias m='open -a Marked'
 
 # ssh setup
 alias sshcopy='ssh-copy-id -f -i ~/.ssh/nick_general'
@@ -123,6 +125,30 @@ function mkcd() {
 
 function release() {
   git tag -a $1 -m $1
+}
+
+function clean() {
+    [[ -z "$(git status --porcelain)" ]]
+}
+function master() {
+    [[ $(git symbolic-ref --short HEAD) == master ]]
+}
+function tagged() {
+    $(git describe --exact-match --tags $(git rev-parse HEAD) > /dev/null 2>&1)
+}
+
+function extv() {
+  if ! clean; then
+  	echo "It looks like the source repo is not clean.";
+  	return
+  fi
+  if tagged; then
+  	echo "It looks like the source repo is already tagged.";
+  	return
+  fi
+  newtag=v$(git describe --tags --abbrev=0 | awk -F'v' '{$0=($2+1)}1' OFS='v')
+  echo "new tag $newtag"
+  git tag -a -m 'incremented by script' $newtag; git push github master --tags
 }
 
 
