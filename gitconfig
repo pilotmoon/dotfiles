@@ -3,8 +3,8 @@
 	name = Nick Moore
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHtoLybiYrwRRnIESSdLe6PmUfrGqFUVKQ6RAl+nz/8Z
 [core]
-#	editor = /Applications/Komet.app/Contents/MacOS/Komet
-	editor = nvim
+	editor = /Applications/Komet.app/Contents/MacOS/Komet
+#	editor = nvim
 [gpg]
 	format = ssh
 [gpg "ssh"]
