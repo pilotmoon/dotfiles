@@ -38,7 +38,7 @@ zstyle ':completion:*' menu 'yes=long' select
 # ZSH Options <https://zsh.sourceforge.io/Doc/Release/Options.html>
 #
 # insert on first tab press
-setopt menu_complete 
+setopt menu_complete
 # don't beep/flash on ambiguous completion
 unsetopt list_beep
 
@@ -83,7 +83,8 @@ export EDITOR=nvim
 #############
 
 # general tools
-alias ll='exa -laFh --git'
+# alias ll='exa -laFh --git'
+alias ll='ls -l'
 alias bb='open -a BBEdit'
 alias ghd='open -a GitHub\ Desktop'
 alias kk='open -a GitKraken'
@@ -121,7 +122,7 @@ alias sshcopy='ssh-copy-id -f -i ~/.ssh/nick_general'
 # functions
 function mkcd() {
   mkdir -p $@ && cd $_;
-} 
+}
 
 function release() {
   git tag -a $1 -m $1
