@@ -3,53 +3,59 @@
   "console_title_template": "{{ .UserName }}@{{ .HostName }}",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "foreground": "yellow",
-          "style": "plain",
           "properties": {
+            "cache_duration": "none",
             "style": "full"
           },
           "template": "{{ .Path }} ",
-          "type": "path"
+          "foreground": "yellow",
+          "type": "path",
+          "style": "plain"
         },
         {
           "properties": {
             "branch_icon": "",
-            "fetch_status": true,
+            "cache_duration": "none",
             "fetch_stash_count": true,
+            "fetch_status": true,
             "fetch_worktree_count": true
           },
-          "style": "plain",
           "template": "({{ if or (.Working.Changed) (.Staging.Changed) (gt .StashCount 0) }}<magenta>{{ .HEAD }}</>{{ else }}<green>{{ .HEAD }}</>{{ end }}{{ if (gt .Ahead 0)}}<cyan>{{ .BranchStatus }}</>{{ end }}{{ if (gt .Behind 0)}}<cyan>{{ .BranchStatus }}</>{{ end }}{{ if .Staging.Changed }} <green>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }} <red>{{ .Working.String }}</>{{ end }}) ",
-          "type": "git"
+          "type": "git",
+          "style": "plain"
         },
         {
-          "foreground": "blue",
-          "style": "plain",
+          "properties": {
+            "cache_duration": "none"
+          },
           "template": "{{ .UserName }}@{{ .HostName }}",
-          "type": "session"
+          "foreground": "blue",
+          "type": "session",
+          "style": "plain"
         }
       ],
-      "type": "prompt"
+      "newline": true
     },
     {
+      "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
           "properties": {
-            "always_enabled": true
+            "always_enabled": true,
+            "cache_duration": "none"
           },
-          "style": "plain",
           "template": "{{ if gt .Code 0 }}<red>({{ .Code }}) </>{{ else }}<green>({{ .Code }}) </>{{ end }}> ",
-          "type": "exit"
+          "type": "exit",
+          "style": "plain"
         }
       ],
-      "type": "prompt"
+      "newline": true
     }
   ],
-  "version": 2
+  "version": 3
 }
