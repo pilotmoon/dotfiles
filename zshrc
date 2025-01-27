@@ -160,4 +160,18 @@ function extv() {
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/crowdin@3/bin:$PATH"
 
+# rbenv
+if command -v rbenv >/dev/null 2>&1; then
+	eval "$(rbenv init - zsh)"
+fi
+
+# nodenv
+if command -v nodenv >/dev/null 2>&1; then
+	eval "$(nodenv init -)"
+fi
+
+# cargo for rust
+. "$HOME/.cargo/env"
+
+
 # extras
