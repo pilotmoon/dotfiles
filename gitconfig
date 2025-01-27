@@ -13,7 +13,7 @@
 [commit]
 	gpgsign = true
 [alias]
-	log-nice = log --format=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %ch) %C(bold blue)<%an>%Creset' --all
+	log-nice = log --graph --format=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr, %ch) %C(bold blue)<%an>%Creset' --all
 	co = checkout
 [diff]
         tool = Kaleidoscope
