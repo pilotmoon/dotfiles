@@ -83,8 +83,8 @@ export EDITOR=nvim
 #############
 
 # general tools
-# alias ll='exa -laFh --git'
-alias ll='ls -l'
+alias ll='eza -l --git'
+#alias ll='ls -l'
 alias bb='open -a BBEdit'
 alias ghd='open -a GitHub\ Desktop'
 alias kk='open -a GitKraken'
@@ -159,6 +159,9 @@ function extv() {
 # homebrew paths
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/crowdin@3/bin:$PATH"
+
+# go bin
+export PATH="$HOME/go/bin:$PATH"
 
 # rbenv
 if command -v rbenv >/dev/null 2>&1; then
