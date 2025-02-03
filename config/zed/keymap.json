@@ -1,0 +1,15 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-o": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-shift-i": "outline::Toggle",
+      "cmd-shift-o": "file_finder::Toggle"
+    }
+  }
+]

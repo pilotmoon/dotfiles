@@ -27,4 +27,5 @@
     ~/.ssh/general.pub: ssh/general.pub
     ~/.ssh/deploy.pub: ssh/deploy.pub
     ~/.ssh/allowed_signers: ssh/allowed_signers
-
+    ~/.config/zed/settings.json: config/zed/settings.json
+    ~/.config/zed/keymap.json: config/zed/keymap.json    
