@@ -7,11 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "jupyter": {
+    "kernel_selections": {
+      "typescript": "deno",
+      "javascript": "deno"
+    }
+  },
   "show_whitespaces": "all",
   "assistant": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "o3-mini"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -19,9 +25,6 @@
     "HTML": ["tmpl"]
   },
   "languages": {
-    "Go": {
-      "show_inline_completions": false
-    },
     "TypeScript": {
       "formatter": {
         "external": {
@@ -34,24 +37,41 @@
         }
       }
     },
+    "HTML": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "file.html"]
+        }
+      }
+    },
     "Markdown": {
       "formatter": {
         "external": {
-          "command": "deno",
-          "arguments": ["fmt", "--ext", "md", "-"]
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "file.md", "--prose-wrap", "always"]
+        }
+      }
+    },
+    "Vue.js": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "file.vue", "--tab-width", "2"]
         }
       }
     }
   },
-  "inline_completions": {
-    "disabled_globs": [".env", "source/Omnivore.popclipext/Config.ts"]
+  "edit_predictions": {
+    "disabled_globs": [".env"]
   },
   "features": {
+    "edit_prediction_provider": "zed",
     "copilot": true
   },
   "show_copilot_suggestions": true,
   "terminal": {
-    "dock": "bottom",
+    "domck": "bottom",
     "font_size": 12,
     "option_as_meta": true
   },
@@ -62,5 +82,5 @@
   "vim_mode": false,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Macchiato - No Italics",
-  "buffer_font_size": 16
+  "buffer_font_size": 12.0
 }

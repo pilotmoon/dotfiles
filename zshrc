@@ -1,4 +1,4 @@
-echo 'Hello from .zshrc'
+#echo 'Hello from .zshrc'
 
 ################
 ## ZSH Config ##
@@ -6,7 +6,12 @@ echo 'Hello from .zshrc'
 
 # prevent dups in history
 # https://unix.stackexchange.com/questions/599641/why-do-i-have-duplicates-in-my-zsh-history
-setopt HIST_FIND_NO_DUPS
+# setopt HIST_EXPIRE_DUPS_FIRST
+# setopt HIST_IGNORE_DUPS
+# setopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_IGNORE_SPACE
+# setopt HIST_FIND_NO_DUPS
+# setopt HIST_SAVE_NO_DUPS
 
 # prompt
 eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.omp.json)"
@@ -65,6 +70,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Homebrew options
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_AUTO_UPDATE_SECS=1209600 #2 weeks
 
 # Browser for `gh`
 export BROWSER="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
@@ -116,6 +122,9 @@ alias ose='open -a PopClip'
 alias z='open -a Zed'
 alias m='open -a Marked'
 
+# pip
+alias pip='python3 -m pip'
+
 # ssh setup
 alias sshcopy='ssh-copy-id -f -i ~/.ssh/nick_general'
 
@@ -159,6 +168,7 @@ function extv() {
 # homebrew paths
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/crowdin@3/bin:$PATH"
+export PATH="/opt/homebrew/opt/python/bin:$PATH"
 
 # go bin
 export PATH="$HOME/go/bin:$PATH"
