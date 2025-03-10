@@ -25,6 +25,9 @@
     "HTML": ["tmpl"]
   },
   "languages": {
+    "Go": {
+      "show_edit_predictions": false
+    },
     "TypeScript": {
       "formatter": {
         "external": {
