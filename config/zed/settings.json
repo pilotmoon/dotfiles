@@ -60,7 +60,14 @@
       "formatter": {
         "external": {
           "command": "prettier",
-          "arguments": ["--stdin-filepath", "file.vue", "--tab-width", "2"]
+          "arguments": [
+            "--stdin-filepath",
+            "file.vue",
+            "--tab-width",
+            "2",
+            "--print-width",
+            "160"
+          ]
         }
       }
     }
