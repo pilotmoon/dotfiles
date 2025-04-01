@@ -158,7 +158,7 @@ function extv() {
   fi
   newtag=v$(git describe --tags --abbrev=0 | awk -F'v' '{$0=($2+1)}1' OFS='v')
   echo "new tag $newtag"
-  git tag -a -m 'incremented by script' $newtag; git push github master --tags
+  git tag -a -m 'incremented by script' $newtag; git push --tags
 }
 
 
