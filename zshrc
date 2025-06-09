@@ -82,7 +82,7 @@ export NPM_CONFIG_YES=false
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 # Set up neovim as default editor
-export EDITOR=nvim
+export EDITOR=vi
 
 #############
 ## Aliases ##
@@ -96,7 +96,7 @@ alias ghd='open -a GitHub\ Desktop'
 alias kk='open -a GitKraken'
 alias ds='open -a Dropshelf'
 alias ip="ifconfig en0 | grep inet | grep -v inet6 | cut -d ' ' -f2"
-alias vi='nvim'
+#alias vi='nvim'
 alias path="echo $PATH | tr ':' '\\n'"
 alias sz="source ~/.zshrc"
 
