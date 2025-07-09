@@ -121,6 +121,7 @@ alias pcfind="mdfind \"kMDItemCFBundleIdentifier == 'com.pilotmoon.popclip*'\" 2
 alias ose='open -a PopClip'
 alias z='open -a Zed'
 alias m='open -a Marked'
+alias biome='bunx @biomejs/biome'
 
 # pip
 alias pip='python3 -m pip'
@@ -164,6 +165,9 @@ function extv() {
 
 # bun completions
 [ -s "/Users/nick/.bun/_bun" ] && source "/Users/nick/.bun/_bun"
+
+# bun path
+export PATH="/Users/nick/.bun/bin:$PATH"
 
 # homebrew paths
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"

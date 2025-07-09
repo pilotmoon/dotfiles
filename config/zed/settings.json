@@ -15,9 +15,10 @@
   },
   "show_whitespaces": "all",
   "agent": {
+    "default_profile": "write",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -29,15 +30,10 @@
       "show_edit_predictions": false
     },
     "TypeScript": {
-      "formatter": {
-        "external": {
-          "command": "bunx",
-          "arguments": [
-            "@biomejs/biome",
-            "format",
-            "--stdin-file-path={buffer_path}"
-          ]
-        }
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
       }
     },
     "HTML": {
@@ -92,5 +88,12 @@
   "vim_mode": false,
   "base_keymap": "VSCode",
   "theme": "Catppuccin Macchiato - No Italics",
-  "buffer_font_size": 12.0
+  "buffer_font_size": 12.0,
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    }
+  }
 }
