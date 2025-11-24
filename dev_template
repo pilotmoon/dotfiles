@@ -11,3 +11,4 @@ export PILOTMOON_WWW_GIT_REPO='op://dev/BuildSettings/www_git_url'
 export PILOTMOON_POPCLIPWEB_REBUILD_URL='op://dev/BuildSettings/popclipweb_rebuild_url'
 
 export OPENAI_API_KEY='op://dev/BuildSettings/openai-api-key'
+export OPENROUTER_API_KEY='op://dev/BuildSettings/openrouter-api-key'

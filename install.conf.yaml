@@ -6,17 +6,17 @@
       stdout: true
       stderr: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - create:
-  - ~/work
-  - ~/.ssh
-  - ~/.config/zed
+    - ~/work
+    - ~/.ssh
+    - ~/.config/zed
 
 - shell:
-  - [git submodule update --init, Pull in submodules]
-  - [./setup_ssh.zsh, Setting up SSH]
-  - [./setup_dev.zsh, Setting up dev variables]
+    - [git submodule update --init, Pull in submodules]
+    - [./setup_ssh.zsh, Setting up SSH]
+    - [./setup_dev.zsh, Setting up dev variables]
 
 - link:
     ~/.zshrc:
@@ -29,4 +29,5 @@
     ~/.ssh/deploy.pub: ssh/deploy.pub
     ~/.ssh/allowed_signers: ssh/allowed_signers
     ~/.config/zed/settings.json: config/zed/settings.json
-    ~/.config/zed/keymap.json: config/zed/keymap.json    
+    ~/.config/zed/keymap.json: config/zed/keymap.json
+    ~/.config/fish: config/fish

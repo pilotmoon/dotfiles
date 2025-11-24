@@ -14,7 +14,7 @@
 # setopt HIST_SAVE_NO_DUPS
 
 # prompt
-eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.omp.json)"
+# eval "$(oh-my-posh init zsh --config ~/.dotfiles/resources/nick.onehalf.minimal.omp.json)"
 
 # Set up autocomplete etc using plugins
 
