@@ -77,6 +77,7 @@
   },
   "show_copilot_suggestions": true,
   "terminal": {
+    "shell": "system",
     "domck": "bottom",
     "font_size": 12,
     "option_as_meta": true
