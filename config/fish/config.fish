@@ -3,3 +3,5 @@ if status is-interactive
 end
 
 source ~/.dotfiles/dev
+
+fish_add_path /Users/nick/.bun/bin
