@@ -4,4 +4,5 @@ end
 
 source ~/.dotfiles/dev
 
-fish_add_path /Users/nick/.bun/bin
+fish_add_path /Users/nick/.bun/binexport
+fish_add_path $HOME/.local/bin
