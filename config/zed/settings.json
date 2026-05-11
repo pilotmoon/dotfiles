@@ -7,50 +7,92 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "disable_ai": false,
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+    },
+  },
+  "ssh_connections": [
+    {
+      "host": "lemonade",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/Users/Nicholas"],
+        },
+        {
+          "paths": ["/etc/nginx/./"],
+        },
+      ],
+    },
+    {
+      "host": "hma",
+      "args": [],
+      "projects": [],
+    },
+  ],
+  "disable_ai": true,
   "jupyter": {
     "kernel_selections": {
       "typescript": "deno",
-      "javascript": "deno"
-    }
+      "javascript": "deno",
+    },
   },
   "show_whitespaces": "all",
   "agent": {
+    "dock": "right",
     "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4",
     },
   },
   "file_types": {
-    "HTML": ["tmpl"]
+    "HTML": ["tmpl"],
   },
   "languages": {
     "Go": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
     },
     "TypeScript": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
-      }
+        "source.organizeImports.biome": true,
+      },
     },
     "HTML": {
       "formatter": {
         "external": {
           "command": "prettier",
-          "arguments": ["--stdin-filepath", "file.html"]
-        }
-      }
+          "arguments": ["--stdin-filepath", "file.html"],
+        },
+      },
     },
     "Markdown": {
       "formatter": {
         "external": {
           "command": "prettier",
-          "arguments": ["--stdin-filepath", "file.md", "--prose-wrap", "always"]
-        }
-      }
+          "arguments": [
+            "--stdin-filepath",
+            "file.md",
+            "--prose-wrap",
+            "always",
+          ],
+        },
+      },
     },
     "Vue.js": {
       "formatter": {
@@ -62,28 +104,29 @@
             "--tab-width",
             "2",
             "--print-width",
-            "160"
-          ]
-        }
-      }
-    }
+            "160",
+          ],
+        },
+      },
+    },
   },
   "edit_predictions": {
-    "disabled_globs": [".env"]
+    "provider": "zed",
+    "mode": "subtle",
+    "disabled_globs": [".env"],
   },
   "features": {
-    "edit_prediction_provider": "zed",
-    "copilot": true
+    "copilot": true,
   },
   "show_copilot_suggestions": true,
   "terminal": {
     "shell": "system",
     "domck": "bottom",
     "font_size": 12,
-    "option_as_meta": true
+    "option_as_meta": true,
   },
   "copilot": {
-    "disabled_globs": [".env*"]
+    "disabled_globs": [".env*"],
   },
   "format_on_save": "on",
   "vim_mode": false,
@@ -93,8 +136,8 @@
   "lsp": {
     "biome": {
       "settings": {
-        "require_config_file": true
-      }
-    }
-  }
+        "require_config_file": true,
+      },
+    },
+  },
 }
