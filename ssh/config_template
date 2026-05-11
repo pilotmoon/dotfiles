@@ -27,7 +27,7 @@ Host github
 	User git
 	IdentityFile ~/.ssh/github.pub
 	IdentitiesOnly yes
-	   
+
 # lemonade
 Host lemonade
 	User op://dev/lemonade-nick/username
@@ -44,6 +44,14 @@ Host lemonade-deploy
 	IdentityFile ~/.ssh/deploy.pub
 	IdentitiesOnly yes
 
+# popclip-discourse
+Host popclip-discourse
+    User op://dev/popclip-discourse/username
+	HostName op://dev/popclip-discourse/ip
+	Port op://dev/popclip-discourse/ssh_port
+	IdentityFile ~/.ssh/general.pub
+	IdentitiesOnly yes
+
 # web
 Host phpi
 	User op://dev/phpi/username
@@ -57,7 +65,7 @@ Host hma
 	Port op://dev/hma/ssh_port
 	IdentityFile ~/.ssh/general.pub
 	IdentitiesOnly yes
-    
+
 # ricciardo
 Host ricciardo
 	User nick
@@ -65,7 +73,7 @@ Host ricciardo
 	Port 22
 	IdentityFile ~/.ssh/general.pub
 	IdentitiesOnly yes
-	
+
 # norris
 Host norris
 	User nick
@@ -73,7 +81,7 @@ Host norris
 	Port 22
 	IdentityFile ~/.ssh/nick_general.pub
 	IdentitiesOnly yes
-	
+
 # kvyat
 Host kvyat
 	User nick
