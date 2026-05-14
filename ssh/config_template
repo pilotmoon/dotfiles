@@ -1,15 +1,16 @@
 # 1Password is the identity agent
 Host *
 	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+	IdentityFile ~/.ssh/general.pub
+	IdentitiesOnly yes
+
+# Make terminal work properly
+Host mansell lemonade popclip-discourse
+    SetEnv TERM=xterm-256color
+    RequestTTY yes
 
 # Local NAS
-Host op://dev/nas/hostname
-	User op://dev/nas/username
-	HostName op://dev/nas/ip
-	Port op://dev/nas/ssh_port
-
-# Local git server
-Host gitserver
+Host mansell gitserver
 	User op://dev/nas/username
 	HostName op://dev/nas/ip
 	Port op://dev/nas/ssh_port
@@ -19,22 +20,18 @@ Host github1
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/github1.pub
-	IdentitiesOnly yes
 
 # Work GitHub
 Host github
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/github.pub
-	IdentitiesOnly yes
 
 # lemonade
 Host lemonade
 	User op://dev/lemonade-nick/username
 	HostName op://dev/lemonade/ip
 	Port op://dev/lemonade/ssh_port
-	IdentityFile ~/.ssh/general.pub
-	IdentitiesOnly yes
 
 # lemonade deploy
 Host lemonade-deploy
@@ -42,50 +39,30 @@ Host lemonade-deploy
 	HostName op://dev/lemonade/ip
 	Port op://dev/lemonade/ssh_port
 	IdentityFile ~/.ssh/deploy.pub
-	IdentitiesOnly yes
 
 # popclip-discourse
 Host popclip-discourse
     User op://dev/popclip-discourse/username
 	HostName op://dev/popclip-discourse/ip
 	Port op://dev/popclip-discourse/ssh_port
-	IdentityFile ~/.ssh/general.pub
-	IdentitiesOnly yes
-
-# web
-Host phpi
-	User op://dev/phpi/username
-	HostName op://dev/phpi/domain
-	Port op://dev/phpi/ssh_port
 
 # hma
 Host hma
 	User op://dev/hma/username
 	HostName op://dev/hma/domain
 	Port op://dev/hma/ssh_port
-	IdentityFile ~/.ssh/general.pub
-	IdentitiesOnly yes
 
 # ricciardo
 Host ricciardo
 	User nick
 	HostName ricciardo.local
-	Port 22
-	IdentityFile ~/.ssh/general.pub
-	IdentitiesOnly yes
 
 # norris
 Host norris
 	User nick
 	HostName norris.local
-	Port 22
-	IdentityFile ~/.ssh/nick_general.pub
-	IdentitiesOnly yes
 
 # kvyat
 Host kvyat
 	User nick
 	HostName kvyat.local
-	Port 22
-	IdentityFile ~/.ssh/nick_general.pub
-	IdentitiesOnly yes
