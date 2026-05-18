@@ -8,16 +8,16 @@
 // from the command palette or from `Zed` application menu.
 {
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent_servers": {
     "opencode": {
@@ -81,19 +81,19 @@
         },
       },
     },
-    "Markdown": {
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": [
-            "--stdin-filepath",
-            "file.md",
-            "--prose-wrap",
-            "always",
-          ],
-        },
-      },
-    },
+    // "Markdown": {
+    //   "formatter": {
+    //     "external": {
+    //       "command": "prettier",
+    //       "arguments": [
+    //         "--stdin-filepath",
+    //         "file.md",
+    //         "--prose-wrap",
+    //         "always",
+    //       ],
+    //     },
+    //   },
+    // },
     "Vue.js": {
       "formatter": {
         "external": {
