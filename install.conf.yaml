@@ -19,6 +19,8 @@
     - [./setup_dev.zsh, Setting up dev variables]
 
 - link:
+    ~/.zshrc:
+    ~/.zshenv:
     ~/.gitconfig:
     ~/.ssh/config: ssh/config
     ~/.ssh/github.pub: ssh/github.pub
