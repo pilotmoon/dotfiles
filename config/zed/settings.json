@@ -30,27 +30,21 @@
       "args": [],
       "projects": [
         {
-          "paths": [
-            "/etc/nginx"
-          ]
+          "paths": ["/etc/nginx"],
         },
         {
-          "paths": [
-            "/var/www"
-          ]
+          "paths": ["/var/www"],
         },
         {
-          "paths": [
-            "~/./"
-          ]
-        }
-      ]
+          "paths": ["~/./"],
+        },
+      ],
     },
     {
       "host": "hma",
       "args": [],
-      "projects": []
-    }
+      "projects": [],
+    },
   ],
   "disable_ai": true,
   "jupyter": {
@@ -72,6 +66,9 @@
     "HTML": ["tmpl"],
   },
   "languages": {
+    "HTML": {
+      "format_on_save": "off"
+    },
     "Go": {
       "show_edit_predictions": false,
     },
@@ -82,14 +79,14 @@
         "source.organizeImports.biome": true,
       },
     },
-    "HTML": {
-      "formatter": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "file.html"],
-        },
-      },
-    },
+    // "HTML": {
+    //   "formatter": {
+    //     "external": {
+    //       "command": "prettier",
+    //       "arguments": ["--stdin-filepath", "file.html"],
+    //     },
+    //   },
+    // },
     // "Markdown": {
     //   "formatter": {
     //     "external": {
