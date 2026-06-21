@@ -21,7 +21,7 @@ Host github1
 	IdentityFile ~/.ssh/github1.pub
 
 # Work GitHub
-Host github
+Host github github.com
 	HostName github.com
 	User git
 	IdentityFile ~/.ssh/github.pub
